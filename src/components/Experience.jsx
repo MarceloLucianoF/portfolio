@@ -60,8 +60,11 @@ const experiences = [
         period: "Fevereiro 2022 – Junho 2022",
         description: "Suporte técnico N1 a usuários no ambiente escolar, garantindo o bom funcionamento de estações de trabalho.",
         achievements: [
-          "Diagnóstico e resolução de falhas de hardware/software.",
-          "Manutenções preventivas e periódicas em equipamentos de TI."
+          "Administração de servidores Linux, containers Docker e redes seguras (OpenVPN, WireGuard, SSH).",
+          "Criação do 'Especialista Docs Focalle' (IA/Engenharia de Prompts), automatizando a criação de manuais técnicos da equipe.",
+          "Estruturação da base de conhecimento do zero: redação de 16+ manuais técnicos e compilação de 200+ comandos Linux operacionais.",
+          "Mapeamento e documentação de fluxos de troubleshooting para 15+ problemas recorrentes, reduzindo drasticamente o SLA.",
+          "Automação de diagnósticos operacionais com scripts em Python e SQL."
         ],
         techStack: ["Hardware", "Help Desk", "Manutenção Preventiva"]
       }

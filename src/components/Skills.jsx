@@ -67,19 +67,27 @@ export default function Skills() {
           ))}
         </div>
 
-        {/* Certificações Extras */}
+        {/* Certificações Extras e Idiomas */}
         <div className="mt-16 text-center">
-          <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-4">Certificações de Destaque</p>
-          <div className="flex flex-wrap justify-center gap-6">
-            <div className="flex items-center gap-2 text-gray-600 bg-gray-50 px-5 py-2.5 rounded-full border border-gray-200">
-              <span className="text-blue-600">🛡️</span> Introduction to Cybersecurity (Cisco)
+          <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">Certificações & Idiomas</p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex items-center gap-2 text-gray-700 bg-white shadow-sm px-5 py-2.5 rounded-xl border border-gray-200 text-sm font-semibold hover:border-blue-300 transition-colors">
+              <span className="text-blue-600">🛡️</span> Cisco Cybersecurity
             </div>
-            <div className="flex items-center gap-2 text-gray-600 bg-gray-50 px-5 py-2.5 rounded-full border border-gray-200">
-              <span className="text-blue-600">🤝</span> Customer Success (Sebrae)
+            <div className="flex items-center gap-2 text-gray-700 bg-white shadow-sm px-5 py-2.5 rounded-xl border border-gray-200 text-sm font-semibold hover:border-blue-300 transition-colors">
+              <span className="text-blue-600">🤝</span> Sebrae Customer Success
+            </div>
+            <div className="flex items-center gap-2 text-gray-700 bg-white shadow-sm px-5 py-2.5 rounded-xl border border-gray-200 text-sm font-semibold hover:border-blue-300 transition-colors">
+              <span className="text-blue-600">📊</span> SQL para Análise de Dados (Udemy)
+            </div>
+            <div className="flex items-center gap-2 text-gray-700 bg-white shadow-sm px-5 py-2.5 rounded-xl border border-gray-200 text-sm font-semibold hover:border-blue-300 transition-colors">
+              <span className="text-blue-600">🧠</span> IA & Engenharia de Prompts
+            </div>
+            <div className="flex items-center gap-2 text-gray-700 bg-white shadow-sm px-5 py-2.5 rounded-xl border border-gray-200 text-sm font-semibold hover:border-blue-300 transition-colors">
+              <span className="text-blue-600">🌎</span> Inglês (Técnico) & Espanhol (Básico)
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );
