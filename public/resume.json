@@ -1,0 +1,90 @@
+{
+  "name": "Marcelo Luciano Filho",
+  "title": "Engenheiro de Soluções | Infraestrutura Linux, Automação & IA Aplicada",
+  "location": "Florianópolis, SC",
+  "email": "marceloluciano30@gmail.com",
+  "phone": "+55 35 99874-4678",
+  "links": {
+    "linkedin": "https://linkedin.com/in/marcelo-luciano-filho",
+    "github": "https://github.com/MarceloLucianoF",
+    "portfolio": "https://portfolio-marcelo-filho.vercel.app/"
+  },
+  "summary": "Engenheiro de Soluções com foco em Infraestrutura Linux crítica, Docker, PostgreSQL e automação com Python. Criei o 'Especialista Docs Focalle' com IA, reduzindo ~35% o tempo médio de diagnóstico (SLA) por padronização e base de conhecimento.",
+  "skills": [
+    "Linux (Debian/CentOS)",
+    "Docker",
+    "PostgreSQL",
+    "Python",
+    "SQL",
+    "OpenVPN/WireGuard",
+    "SSH Tunneling",
+    "Firewall",
+    "RabbitMQ"
+  ],
+  "experience": [
+    {
+      "company": "Focalle Engenharia Viária",
+      "role": "Suporte Técnico N2",
+      "period": "Dez 2023 – Presente",
+      "location": "Florianópolis, SC",
+      "bullets": [
+        "Administração de servidores Linux, containers Docker e PostgreSQL em operação crítica.",
+        "Configuração e manutenção de redes seguras (OpenVPN, WireGuard, túneis SSH).",
+        "Criação do 'Especialista Docs Focalle' (IA) com 16+ manuais, 200+ comandos e 15+ fluxos de troubleshooting, reduzindo ~35% do tempo médio de diagnóstico.",
+        "Automação de rotinas e diagnósticos com Python e SQL."
+      ]
+    },
+    {
+      "company": "Sulminas Fios e Cabos",
+      "role": "Estagiário de TI",
+      "period": "Jul 2022 – Dez 2022",
+      "location": "Poços de Caldas, MG",
+      "bullets": [
+        "Manutenção proativa de servidores e configuração de regras de firewall.",
+        "Automação de relatórios via SQL integrado ao Excel para apoio ao controle de estoque."
+      ]
+    },
+    {
+      "company": "Sistema COC de Ensino",
+      "role": "Estagiário de Suporte",
+      "period": "Fev 2022 – Jun 2022",
+      "location": "Poços de Caldas, MG",
+      "bullets": [
+        "Suporte N1 a usuários, diagnóstico de hardware/software e manutenção preventiva.",
+        "Apoio na configuração de impressoras, rede local e recursos de sala."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Estácio",
+      "course": "Tecnólogo em Análise e Desenvolvimento de Sistemas (ADS)",
+      "period": "Mar 2023 – Jul 2025",
+      "details": "CR 9.10"
+    },
+    {
+      "institution": "Instituto Educacional São João da Escócia",
+      "course": "Técnico em Eletrônica",
+      "period": "2020 – 2022",
+      "details": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Especialista Docs Focalle (IA)",
+      "stack": ["Python", "Engenharia de Prompts", "Linux", "SQL"],
+      "bullets": [
+        "Padronização de manuais técnicos e troubleshooting para operação N2.",
+        "Entregas: 16+ manuais, 200+ comandos, 15+ cenários críticos."
+      ]
+    },
+    {
+      "name": "GymUp — Plataforma de Gestão de Treinos",
+      "stack": ["React", "Tailwind CSS", "Firebase"],
+      "bullets": [
+        "Runner com cronômetro global e persistência em tempo real.",
+        "Dashboard inteligente e UX Mobile-First."
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import React from 'react';
 const GITHUB_URL = "https://github.com/MarceloLucianoF";
 const LINKEDIN_URL = "https://linkedin.com/in/marcelo-luciano-filho";
 const FOTO_PERFIL_URL = "https://avatars.githubusercontent.com/u/103156755?s=400&v=4";
-const CV_URL = "#"; // Insira o link do seu PDF atualizado aqui
+const CV_URL = "/api/cv";
 
 export default function Hero() {
   return (
