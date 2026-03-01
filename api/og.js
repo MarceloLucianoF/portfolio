@@ -1,3 +1,4 @@
+import React from 'react';
 import { ImageResponse } from '@vercel/og';
 
 export const config = {
@@ -6,7 +7,8 @@ export const config = {
 
 const AVATAR_URL = 'https://avatars.githubusercontent.com/u/103156755?v=4';
 
-export default function () {
+// Dê um nome à função e receba o 'request' (padrão Vercel Edge)
+export default async function handler(request) {
   return new ImageResponse(
     (
       <div
