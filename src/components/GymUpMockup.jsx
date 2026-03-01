@@ -249,7 +249,7 @@ export default function GymUpMockup() {
                                 </div>
                                 <div>
                                     <p className="text-[10px] font-bold text-gray-500 uppercase tracking-wider">Bem-vindo,</p>
-                                    <h1 className="text-xl font-black text-gray-800 dark:text-white leading-tight">Marcelo 💪</h1>
+                                    <h2 className="text-xl font-black text-gray-800 dark:text-white leading-tight">Marcelo 💪</h2>
                                 </div>
                             </div>
                             <button className="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-sm relative hover:bg-gray-200 transition-colors">

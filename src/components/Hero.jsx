@@ -4,18 +4,18 @@ import React from 'react';
 const GITHUB_URL = "https://github.com/MarceloLucianoF";
 const LINKEDIN_URL = "https://linkedin.com/in/marcelo-luciano-filho";
 const FOTO_PERFIL_URL = "https://avatars.githubusercontent.com/u/103156755?s=400&v=4";
-const CV_URL = "#"; 
+const CV_URL = "#"; // Insira o link do seu PDF atualizado aqui
 
 export default function Hero() {
   return (
     <section id="inicio" className="py-20 md:py-32 bg-gray-50 text-gray-900 w-full relative overflow-hidden">
       
-      {/* 👇 O Limitador Mágico que mantém tudo centralizado 👇 */}
+      {/* Limitador para manter centralizado */}
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 w-full relative z-10">
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
           
-          {/* Lado Esquerdo: Texto e CTAs */}
+          {/* Lado Esquerdo: Texto Estratégico */}
           <div className="md:col-span-7 flex flex-col items-center md:items-start text-center md:text-left space-y-6">
             
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold shadow-inner">
@@ -34,13 +34,20 @@ export default function Hero() {
               Marcelo <span className="text-blue-600">Luciano</span> Filho
             </h1>
             
-            <p className="text-lg md:text-xl font-medium text-gray-700 max-w-2xl">
-              Engenheiro de Soluções com DNA híbrido: Especialista em <strong className="text-gray-950 font-semibold">Suporte N2/Infraestrutura</strong> e graduado em <strong className="text-gray-950 font-semibold">ADS</strong> (CR 9.10). Apaixonado por automatizar processos com código e Inteligência Artificial.
+            <h2 className="text-2xl font-bold text-gray-800">
+              Engenheiro de Soluções | <span className="text-gray-600 font-medium">Infraestrutura Linux, Automação & IA Aplicada</span>
+            </h2>
+            
+            <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
+              Especialista em ambientes críticos Linux e na transformação de operações técnicas em sistemas estruturados, documentados e escaláveis. 
             </p>
             
-            <p className="text-sm text-gray-600 italic">
-              "Não apenas resolvo problemas operacionais, eu crio sistemas e documentações que antecipam falhas e escalam a eficiência da equipe."
-            </p>
+            {/* Frase de Impacto */}
+            <div className="bg-gray-950 text-white p-5 rounded-xl border-l-4 border-blue-500 shadow-md w-full max-w-2xl">
+              <p className="text-sm md:text-base font-semibold italic leading-relaxed">
+                "Não apenas resolvo incidentes. Estruturo conhecimento, automatizo processos e reduzo dependência operacional."
+              </p>
+            </div>
 
             {/* Botões de Ação */}
             <div className="flex flex-wrap gap-4 pt-6 justify-center md:justify-start">
@@ -72,13 +79,14 @@ export default function Hero() {
               />
             </div>
             
+            {/* Tech Floating Icons */}
             <div className="absolute -bottom-5 -left-5 bg-white p-4 rounded-xl shadow-lg border border-gray-100 animate-pulse">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" className="w-8 h-8" />
             </div>
-            <div className="absolute -top-5 -right-5 bg-white p-4 rounded-xl shadow-lg border border-gray-100 animate-pulse animation-delay-500">
+            <div className="absolute -top-5 -right-5 bg-white p-4 rounded-xl shadow-lg border border-gray-100 animate-pulse" style={{ animationDelay: '0.5s' }}>
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="w-8 h-8" />
             </div>
-            <div className="absolute top-1/2 -left-12 bg-white p-3 rounded-xl shadow-lg border border-gray-100 animate-pulse animation-delay-1000">
+            <div className="absolute top-1/2 -left-12 bg-white p-3 rounded-xl shadow-lg border border-gray-100 animate-pulse" style={{ animationDelay: '1s' }}>
                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-7 h-7" />
             </div>
           </div>

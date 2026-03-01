@@ -6,20 +6,19 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="flex justify-between items-center h-20">
           
-          {/* Logo / Nome */}
           <a href="#inicio" className="text-2xl font-black text-gray-950 tracking-tighter hover:opacity-80 transition-opacity">
             Marcelo<span className="text-blue-600">.dev</span>
           </a>
           
-          {/* Links de Navegação (Desktop) */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Links de Navegação com âncoras relativas corretas */}
+          <div className="hidden md:flex items-center space-x-6">
             <a href="#inicio" className="text-sm font-bold text-gray-600 hover:text-blue-600 transition-colors">Início</a>
-            <a href="#habilidades" className="text-sm font-bold text-gray-600 hover:text-blue-600 transition-colors">Habilidades</a>
+            <a href="#sobre" className="text-sm font-bold text-gray-600 hover:text-blue-600 transition-colors">O Que Faço</a>
             <a href="#projetos" className="text-sm font-bold text-gray-600 hover:text-blue-600 transition-colors">Projetos</a>
             <a href="#experiencia" className="text-sm font-bold text-gray-600 hover:text-blue-600 transition-colors">Experiência</a>
+            <a href="#formacao" className="text-sm font-bold text-gray-600 hover:text-blue-600 transition-colors">Formação</a>
           </div>
 
-          {/* Botão de Contato */}
           <div className="flex items-center">
             <a 
               href="mailto:marceloluciano30@gmail.com" 
