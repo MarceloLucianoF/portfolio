@@ -1,13 +1,10 @@
-import React from 'react';
 import { ImageResponse } from '@vercel/og';
+import React from 'react';
 
-export const config = {
-  runtime: 'edge',
-};
+// 👇 APAGAMOS O BLOCO 'config' QUE FORÇAVA O EDGE AQUI 👇
 
 const AVATAR_URL = 'https://avatars.githubusercontent.com/u/103156755?v=4';
 
-// Dê um nome à função e receba o 'request' (padrão Vercel Edge)
 export default async function handler(request) {
   return new ImageResponse(
     (
