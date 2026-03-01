@@ -1,8 +1,6 @@
 import { ImageResponse } from '@vercel/og';
 import React from 'react';
 
-// 👇 APAGAMOS O BLOCO 'config' QUE FORÇAVA O EDGE AQUI 👇
-
 const AVATAR_URL = 'https://avatars.githubusercontent.com/u/103156755?v=4';
 
 export default async function handler(request) {
