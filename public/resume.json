@@ -1,15 +1,15 @@
 {
   "name": "Marcelo Luciano Filho",
-  "title": "Engenheiro de Soluções | Infraestrutura Linux, Automação & IA Aplicada",
+  "title": "Analista de Infraestrutura & Automação | Linux, Containers & IA Aplicada",
   "location": "Florianópolis, SC",
   "email": "marceloluciano30@gmail.com",
-  "phone": "+55 35 99874-4678",
+  "phone": "(Contato via E-mail / LinkedIn)",
   "links": {
     "linkedin": "https://linkedin.com/in/marcelo-luciano-filho",
     "github": "https://github.com/MarceloLucianoF",
     "portfolio": "https://portfolio-marcelo-filho.vercel.app/"
   },
-  "summary": "Engenheiro de Soluções com foco em Infraestrutura Linux crítica, Docker, PostgreSQL e automação com Python. Criei o 'Especialista Docs Focalle' com IA, reduzindo ~35% o tempo médio de diagnóstico (SLA) por padronização e base de conhecimento.",
+  "summary": "Atuação focada na sustentação de ambientes Linux críticos, Docker, PostgreSQL e automação com Python. Foco na estruturação de conhecimento técnico, integração de sistemas e melhoria contínua de processos para ganho de previsibilidade e eficiência operacional.",
   "skills": [
     "Linux (Debian/CentOS)",
     "Docker",
@@ -29,9 +29,9 @@
       "location": "Florianópolis, SC",
       "bullets": [
         "Administração de servidores Linux, containers Docker e PostgreSQL em operação crítica.",
-        "Configuração e manutenção de redes seguras (OpenVPN, WireGuard, túneis SSH).",
-        "Criação do 'Especialista Docs Focalle' (IA) com 16+ manuais, 200+ comandos e 15+ fluxos de troubleshooting, reduzindo ~35% do tempo médio de diagnóstico.",
-        "Automação de rotinas e diagnósticos com Python e SQL."
+        "Configuração e manutenção de conectividade segura (OpenVPN, WireGuard, túneis SSH).",
+        "Apoio à estruturação técnica com uso de IA, resultando na padronização de 16+ manuais, 200+ comandos operacionais e fluxos de atendimento.",
+        "Contribuição para redução do tempo médio de diagnóstico (SLA) via automação de rotinas com Python e SQL."
       ]
     },
     {
@@ -71,19 +71,19 @@
   ],
   "projects": [
     {
-      "name": "Especialista Docs Focalle (IA)",
+      "name": "Iniciativa Interna de Padronização (IA)",
       "stack": ["Python", "Engenharia de Prompts", "Linux", "SQL"],
       "bullets": [
-        "Padronização de manuais técnicos e troubleshooting para operação N2.",
-        "Entregas: 16+ manuais, 200+ comandos, 15+ cenários críticos."
+        "Estruturação de base documental e fluxos de troubleshooting para a operação N2.",
+        "Entregas focadas em ganho de previsibilidade operacional e redução de dependência informal."
       ]
     },
     {
       "name": "GymUp — Plataforma de Gestão de Treinos",
       "stack": ["React", "Tailwind CSS", "Firebase"],
       "bullets": [
-        "Runner com cronômetro global e persistência em tempo real.",
-        "Dashboard inteligente e UX Mobile-First."
+        "Aplicação interativa com persistência em tempo real e experiência de usuário Mobile-First.",
+        "Implementação de lógica assíncrona complexa e gerenciamento de estado global."
       ]
     }
   ]

@@ -41,43 +41,40 @@ function App() {
 
               <div className="space-y-16">
                 
-                {/* PROJETO CORPORATIVO: Especialista Docs Focalle */}
+                {/* PROJETO CORPORATIVO: Iniciativa Interna de Padronização Técnica */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-gray-950 p-10 md:p-14 rounded-[2.5rem] shadow-2xl border border-gray-800 relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600 rounded-full blur-[120px] opacity-20"></div>
                   
                   <div className="lg:col-span-8 flex flex-col space-y-6 relative z-10">
                     <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold w-max uppercase tracking-widest">
-                      🚀 Case Corporativo (Focalle)
+                      Case Corporativo (Institucional)
                     </div>
-                    <h3 className="text-3xl md:text-4xl font-black tracking-tight text-white">Especialista Docs Focalle (IA)</h3>
+                    <h3 className="text-3xl md:text-4xl font-black tracking-tight text-white">Iniciativa Interna de Padronização Técnica com IA</h3>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
                       <div>
-                        <h4 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">O Problema</h4>
+                        <h4 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">Contexto</h4>
                         <p className="text-gray-300 text-sm leading-relaxed">
-                          Dependência de conhecimento informal e alto tempo de diagnóstico em suporte N2, gerando falta de padronização nos atendimentos.
+                          Ambiente técnico com necessidade de consolidação de conhecimento e redução de dependência operacional em diagnósticos complexos.
                         </p>
                       </div>
                       <div>
-                        <h4 className="text-sm font-bold text-blue-400 uppercase tracking-wider mb-2">A Solução</h4>
+                        <h4 className="text-sm font-bold text-blue-400 uppercase tracking-wider mb-2">Atuação</h4>
                         <p className="text-gray-300 text-sm leading-relaxed">
-                          Criação de um Expert em IA para mapear fluxos, padronizar manuais e consolidar comandos críticos em uma base inteligente.
+                          Estruturação de base documental com apoio de IA e organização de fluxos técnicos recorrentes para a equipe de suporte.
                         </p>
                       </div>
                     </div>
                     
-                    {/* Bloco de Métricas de Impacto */}
+                    {/* Bloco de Resultados */}
                     <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-800 mt-4">
-                      <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">Métricas de Impacto</h4>
+                      <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">Resultados Observados</h4>
                       <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-300">
-                        <li className="flex items-start gap-2"><span className="text-blue-500 mt-0.5">✓</span> 16+ manuais e 200+ comandos documentados</li>
-                        <li className="flex items-start gap-2"><span className="text-blue-500 mt-0.5">✓</span> 15+ cenários críticos padronizados</li>
-                        
-                        <li className="flex items-start gap-2 font-bold text-gray-400">
-                          <span className="text-red-400 mt-0.5">📉</span> Antes: Alta dependência de especialistas
-                        </li>
-                        <li className="flex items-start gap-2 font-bold text-white">
-                          <span className="text-green-400 mt-0.5">📈</span> Depois: Redução de ~35% no tempo médio de diagnóstico (SLA)
+                        <li className="flex items-start gap-2"><span className="text-blue-500 mt-0.5">•</span> Consolidação de 16+ manuais técnicos</li>
+                        <li className="flex items-start gap-2"><span className="text-blue-500 mt-0.5">•</span> Estruturação de 200+ comandos operacionais</li>
+                        <li className="flex items-start gap-2"><span className="text-blue-500 mt-0.5">•</span> Padronização de cenários de troubleshooting</li>
+                        <li className="flex items-start gap-2 font-semibold text-white">
+                          <span className="text-blue-500 mt-0.5">•</span> Contribuição para redução do tempo médio de diagnóstico (~35%)
                         </li>
                       </ul>
                     </div>
@@ -92,7 +89,7 @@ function App() {
 
                   <div className="lg:col-span-4 flex justify-center relative z-10">
                      <div className="w-56 h-56 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full border-8 border-gray-800 flex items-center justify-center shadow-2xl relative">
-                        <div className="absolute inset-0 bg-blue-500 rounded-full blur-xl opacity-20 animate-pulse"></div>
+                        <div className="absolute inset-0 bg-blue-500 rounded-full blur-xl opacity-20"></div>
                         <span className="text-[5rem] relative z-10">🧠</span>
                      </div>
                   </div>

@@ -5,19 +5,34 @@ const pillars = [
     icon: "🖥",
     title: "Infraestrutura Crítica",
     description: "Sustentação e orquestração de ambientes Linux de alta disponibilidade.",
-    items: ["Administração Linux (Debian/CentOS)", "Containers Docker e PostgreSQL", "VPNs e Túneis SSH", "Atuação em sistemas metrológicos INMETRO"]
+    items: [
+      "Administração Linux (Debian/CentOS)", 
+      "Containers Docker e PostgreSQL", 
+      "VPNs e Túneis SSH", 
+      "Atuação em sistemas de monitoramento viário"
+    ]
   },
   {
     icon: "🤖",
     title: "Automação & IA",
-    description: "Uso de IA e código estruturado para ganho de escala operacional.",
-    items: ["Engenharia de Prompts (Claude/ChatGPT)", "Estruturação de bases técnicas com IA", "Automação de manuais", "Scripts de diagnóstico em Python e SQL"]
+    description: "Uso de IA e código estruturado para ganho de previsibilidade operacional.",
+    items: [
+      "Engenharia de Prompts aplicada à documentação", 
+      "Estruturação de bases técnicas com IA", 
+      "Organização automatizada de manuais", 
+      "Scripts de diagnóstico em Python e SQL"
+    ]
   },
   {
     icon: "📚",
     title: "Engenharia de Conhecimento",
-    description: "Estruturação de operações para eliminar a dependência de conhecimento informal.",
-    items: ["Padronização de troubleshooting", "Consolidação de documentação técnica", "Redução drástica de SLA", "Criação de sistemas internos escaláveis"]
+    description: "Estruturação de operações para reduzir a dependência de conhecimento informal.",
+    items: [
+      "Padronização de fluxos de troubleshooting", 
+      "Consolidação de documentação técnica escalável", 
+      "Contribuição para melhoria de SLA", 
+      "Mapeamento de cenários recorrentes"
+    ]
   }
 ];
 
@@ -31,7 +46,7 @@ export default function WhatIDo() {
             O Que Eu <span className="text-blue-600">Faço</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Minha atuação combina três pilares estratégicos para elevar a maturidade técnica de qualquer operação.
+            Minha atuação combina três pilares estratégicos para elevar a maturidade técnica, a segurança e a eficiência de operações críticas.
           </p>
         </div>
 
