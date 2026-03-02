@@ -34,7 +34,7 @@ export default async function handler(request) {
             color: "#38bdf8",
           }}
         >
-          ENGENHEIRO DE SOLUÇÕES
+          DESENVOLVEDOR FRONTEND
         </div>
 
         <div style={{ fontSize: 76, fontWeight: 900, lineHeight: 1.05 }}>
@@ -49,7 +49,7 @@ export default async function handler(request) {
             color: "rgba(226,232,240,0.85)",
           }}
         >
-          Linux • Docker • Python • IA
+          React • JavaScript • Tailwind CSS • Deploy
         </div>
 
         <div
@@ -59,7 +59,7 @@ export default async function handler(request) {
             color: "rgba(148,163,184,0.95)",
           }}
         >
-          Infraestrutura Crítica | Automação | Engenharia de Conhecimento
+          Componentização de UI | Gerenciamento de Estado | Visão Full-Cycle
         </div>
       </div>
     ),
