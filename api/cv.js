@@ -1,110 +1,159 @@
 import { PDFDocument, StandardFonts, rgb } from "pdf-lib";
-import fs from "fs";
-import path from "path";
 
 export default async function handler(req, res) {
   try {
-    // Lendo o JSON diretamente do sistema de arquivos (muito mais rápido e seguro na Vercel)
-    const jsonPath = path.join(process.cwd(), 'public', 'resume.json');
-    const fileContents = fs.readFileSync(jsonPath, 'utf8');
-    const data = JSON.parse(fileContents);
+    // Monta a URL absoluta do seu deploy (funciona local e na Vercel)
+    const proto = req.headers["x-forwarded-proto"] || "https";
+    const host = req.headers.host;
+    const origin = `${proto}://${host}`;
+
+    // Carrega sua “fonte única de verdade”
+    const dataRes = await fetch(`${origin}/resume.json`, { cache: "no-store" });
+    if (!dataRes.ok) throw new Error("Não consegui ler /resume.json");
+    const data = await dataRes.json();
 
     const pdfDoc = await PDFDocument.create();
-    const page = pdfDoc.addPage([595.28, 841.89]); // A4 portrait
-    const { width, height } = page.getSize();
-
     const font = await pdfDoc.embedFont(StandardFonts.Helvetica);
     const fontBold = await pdfDoc.embedFont(StandardFonts.HelveticaBold);
 
+    const A4 = [595.28, 841.89];
     const margin = 48;
+    const lineGap = 6;
+
+    let page = pdfDoc.addPage(A4);
+    let { width, height } = page.getSize();
     let y = height - margin;
 
-    const drawText = (text, size, isBold = false, color = rgb(0, 0, 0)) => {
-      const f = isBold ? fontBold : font;
-      page.drawText(text, { x: margin, y, size, font: f, color });
-      y -= size + 6;
+    const newPage = () => {
+      page = pdfDoc.addPage(A4);
+      ({ width, height } = page.getSize());
+      y = height - margin;
     };
 
-    // Header
-    drawText(data.name, 20, true);
-    drawText(data.title, 11, false, rgb(0.2, 0.2, 0.2));
-    drawText(`${data.location} • ${data.email} • ${data.phone}`, 10, false, rgb(0.25, 0.25, 0.25));
-    y -= 8;
+    const ensureSpace = (needed) => {
+      if (y - needed < 70) newPage();
+    };
 
-    // Links
-    drawText(`LinkedIn: ${data.links.linkedin}`, 9, false, rgb(0.15, 0.15, 0.15));
-    drawText(`GitHub: ${data.links.github}`, 9, false, rgb(0.15, 0.15, 0.15));
-    drawText(`Portfólio: ${data.links.portfolio}`, 9, false, rgb(0.15, 0.15, 0.15));
-    y -= 14;
+    const draw = (text, size = 10, bold = false, color = rgb(0, 0, 0)) => {
+      ensureSpace(size + lineGap);
+      page.drawText(text, {
+        x: margin,
+        y,
+        size,
+        font: bold ? fontBold : font,
+        color,
+        maxWidth: width - margin * 2,
+      });
+      y -= size + lineGap;
+    };
 
-    // Summary
-    drawText("Resumo", 12, true);
-    
-    // wrap simples
-    const wrap = (text, maxLen = 95) => {
-      const words = text.split(" ");
+    const wrap = (text, maxChars = 95) => {
+      const words = String(text || "").split(/\s+/);
       const lines = [];
       let line = "";
+
       for (const w of words) {
         const test = line ? `${line} ${w}` : w;
-        if (test.length > maxLen) {
-          lines.push(line);
+        if (test.length > maxChars) {
+          if (line) lines.push(line);
           line = w;
-        } else line = test;
+        } else {
+          line = test;
+        }
       }
       if (line) lines.push(line);
       return lines;
     };
-    
-    wrap(data.summary, 95).forEach((ln) => drawText(ln, 10));
-    y -= 10;
 
-    // Skills
-    drawText("Competências", 12, true);
-    const skillsLine = data.skills.join(" • ");
-    wrap(skillsLine, 100).forEach((ln) => drawText(ln, 10));
-    y -= 10;
+    const section = (title) => {
+      y -= 6;
+      draw(title, 12, true);
+      // linha fina
+      page.drawLine({
+        start: { x: margin, y: y + 2 },
+        end: { x: width - margin, y: y + 2 },
+        thickness: 1,
+        color: rgb(0.9, 0.9, 0.9),
+      });
+      y -= 10;
+    };
 
-    // Experience
-    drawText("Experiência", 12, true);
-    for (const exp of data.experience) {
-      drawText(`${exp.role} — ${exp.company}`, 11, true);
-      drawText(`${exp.period} | ${exp.location}`, 9, false, rgb(0.3, 0.3, 0.3));
-      for (const b of exp.bullets) {
-        wrap(`• ${b}`, 100).forEach((ln) => drawText(ln, 10));
-      }
-      y -= 8;
-      if (y < 90) {
-        y = height - margin;
-        pdfDoc.addPage([595.28, 841.89]);
-      }
+    // HEADER
+    draw(data.name, 20, true);
+    draw(data.title, 11, false, rgb(0.2, 0.2, 0.2));
+    draw(
+      `${data.location || ""} • ${data.email || ""}${data.phone ? ` • ${data.phone}` : ""}`,
+      10,
+      false,
+      rgb(0.3, 0.3, 0.3)
+    );
+    y -= 6;
+
+    // LINKS
+    if (data.links) {
+      const links = [
+        data.links.portfolio && `Portfólio: ${data.links.portfolio}`,
+        data.links.linkedin && `LinkedIn: ${data.links.linkedin}`,
+        data.links.github && `GitHub: ${data.links.github}`,
+      ].filter(Boolean);
+
+      links.forEach((l) => draw(l, 9, false, rgb(0.25, 0.25, 0.25)));
+      y -= 10;
     }
 
-    // Education
-    drawText("Formação", 12, true);
-    for (const ed of data.education) {
-      drawText(`${ed.course} — ${ed.institution}`, 10, true);
-      drawText(`${ed.period}${ed.details ? ` | ${ed.details}` : ""}`, 9, false, rgb(0.3, 0.3, 0.3));
+    // RESUMO
+    section("Resumo");
+    wrap(data.summary, 100).forEach((ln) => draw(ln, 10));
+    y -= 6;
+
+    // SKILLS
+    section("Competências");
+    wrap((data.skills || []).join(" • "), 105).forEach((ln) => draw(ln, 10));
+    y -= 6;
+
+    // EXPERIÊNCIA
+    section("Experiência");
+    for (const exp of data.experience || []) {
+      draw(`${exp.role} — ${exp.company}`, 11, true);
+      draw(`${exp.period || ""}${exp.location ? ` | ${exp.location}` : ""}`, 9, false, rgb(0.35, 0.35, 0.35));
+
+      for (const b of exp.bullets || []) {
+        wrap(`• ${b}`, 105).forEach((ln) => draw(ln, 10));
+      }
+
+      y -= 8;
+    }
+
+    // FORMAÇÃO
+    section("Formação");
+    for (const ed of data.education || []) {
+      draw(`${ed.course} — ${ed.institution}`, 10, true);
+      const line = `${ed.period || ""}${ed.details ? ` | ${ed.details}` : ""}`.trim();
+      if (line) draw(line, 9, false, rgb(0.35, 0.35, 0.35));
       y -= 6;
     }
 
-    // Projects
-    y -= 8;
-    drawText("Projetos", 12, true);
-    for (const p of data.projects) {
-      drawText(p.name, 10, true);
-      drawText(`Stack: ${p.stack.join(", ")}`, 9, false, rgb(0.3, 0.3, 0.3));
-      for (const b of p.bullets) {
-        wrap(`• ${b}`, 100).forEach((ln) => drawText(ln, 10));
+    // PROJETOS
+    section("Projetos");
+    for (const p of data.projects || []) {
+      draw(p.name, 10, true);
+      if (p.stack?.length) draw(`Stack: ${p.stack.join(", ")}`, 9, false, rgb(0.35, 0.35, 0.35));
+      for (const b of p.bullets || []) {
+        wrap(`• ${b}`, 105).forEach((ln) => draw(ln, 10));
       }
       y -= 6;
     }
 
     const pdfBytes = await pdfDoc.save();
 
+    const filename = "Curriculo_Marcelo_Luciano_Filho.pdf";
+    const forceDownload = String(req.query?.download || "").toLowerCase() === "1";
+
     res.setHeader("Content-Type", "application/pdf");
-    // "inline" abre no navegador, "attachment" força o download direto. Recomendo attachment!
-    res.setHeader("Content-Disposition", 'attachment; filename="Curriculo_Marcelo_Luciano_Filho.pdf"');
+    res.setHeader(
+      "Content-Disposition",
+      `${forceDownload ? "attachment" : "inline"}; filename="${filename}"`
+    );
     res.status(200).send(Buffer.from(pdfBytes));
   } catch (err) {
     res.status(500).json({ error: String(err?.message || err) });

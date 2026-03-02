@@ -6,6 +6,7 @@ import GymUpMockup from './components/GymUpMockup';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Education from './components/Education';
+import Contact from './components/Contact'; // <-- Importado aqui!
 import Footer from './components/Footer';
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
         {/* 2. O QUE EU FAÇO (Os 3 Pilares) */}
         <WhatIDo />
         
-        {/* 3. PROJETOS ESTRATÉGICOS (Focalle Primeiro, GymUp depois) */}
+        {/* 3. PROJETOS ESTRATÉGICOS */}
         <section id="projetos" className="py-20 md:py-32 border-t border-gray-100 bg-gray-50 w-full">
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 w-full">
             <h2 className="text-4xl font-extrabold tracking-tighter text-gray-950 mb-4 text-center">
@@ -65,7 +66,6 @@ function App() {
                       <li className="flex items-start gap-2"><span className="text-blue-500 mt-0.5">✓</span> 16+ manuais e 200+ comandos documentados</li>
                       <li className="flex items-start gap-2"><span className="text-blue-500 mt-0.5">✓</span> 15+ cenários críticos padronizados</li>
                       
-                      {/* Antes e Depois visual */}
                       <li className="flex items-start gap-2 font-bold text-gray-400">
                         <span className="text-red-400 mt-0.5">📉</span> Antes: Alta dependência de especialistas
                       </li>
@@ -150,6 +150,9 @@ function App() {
         
         {/* 6. FORMAÇÃO */}
         <Education />
+
+        {/* 7. CONTATO (Nova Etapa 2) */}
+        <Contact />
 
       </main>
 
