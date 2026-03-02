@@ -1,4 +1,5 @@
 import React from "react";
+import { Mail, Linkedin, ArrowRight } from "lucide-react";
 
 const EMAIL = "marceloluciano30@gmail.com";
 const LINKEDIN_URL = "https://linkedin.com/in/marcelo-luciano-filho";
@@ -8,18 +9,17 @@ export default function Contact() {
     <section id="contato" className="py-20 bg-gray-50 border-t border-gray-100">
       <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-10">
         
-        {/* Header */}
+        {/* Header Corrigido para Frontend */}
         <div className="text-center mb-14">
           <h2 className="text-4xl font-extrabold tracking-tighter text-gray-950 mb-4">
             Vamos <span className="text-blue-600">Conversar</span>?
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Se você busca um profissional alinhado às melhores práticas de Infraestrutura, 
-            automação e confiabilidade de ambientes Linux, estou à disposição para avaliar novas oportunidades.
+            Se você busca um Desenvolvedor Frontend (React) em evolução, com base técnica sólida e foco em UI, componentização e integração com dados, estou à disposição.
           </p>
         </div>
 
-        {/* Cards (Agora com 2 colunas para manter o design limpo sem o WhatsApp) */}
+        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           
           {/* Email */}
@@ -28,8 +28,8 @@ export default function Contact() {
             className="group bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
             title="Enviar e-mail"
           >
-            <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-2xl mb-6 border border-blue-100 group-hover:scale-110 transition-transform">
-              📧
+            <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 border border-blue-100 group-hover:scale-110 transition-transform">
+              <Mail className="text-blue-600" size={28} />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">E-mail</h3>
             <p className="text-sm text-gray-600 mb-6">
@@ -40,9 +40,7 @@ export default function Contact() {
               <span className="text-sm font-semibold text-gray-800">
                 {EMAIL}
               </span>
-              <span className="text-blue-600 font-bold group-hover:translate-x-1 transition-transform">
-                →
-              </span>
+              <ArrowRight className="text-blue-600 group-hover:translate-x-1 transition-transform" size={18} />
             </div>
           </a>
 
@@ -54,8 +52,8 @@ export default function Contact() {
             className="group bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
             title="Abrir LinkedIn"
           >
-            <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-2xl mb-6 border border-blue-100 group-hover:scale-110 transition-transform">
-              🔗
+            <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 border border-blue-100 group-hover:scale-110 transition-transform">
+              <Linkedin className="text-blue-600" size={28} />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">LinkedIn</h3>
             <p className="text-sm text-gray-600 mb-6">
@@ -66,9 +64,7 @@ export default function Contact() {
               <span className="text-sm font-semibold text-gray-800">
                 /marcelo-luciano-filho
               </span>
-              <span className="text-blue-600 font-bold group-hover:translate-x-1 transition-transform">
-                →
-              </span>
+              <ArrowRight className="text-blue-600 group-hover:translate-x-1 transition-transform" size={18} />
             </div>
           </a>
         </div>
@@ -76,7 +72,7 @@ export default function Contact() {
         {/* CTA final */}
         <div className="mt-12 text-center">
           <p className="text-sm text-gray-500">
-            Preferência de contato: <span className="font-semibold text-gray-700">LinkedIn</span> ou <span className="font-semibold text-gray-700">E-mail corporativo</span>.
+            Preferência de contato: <span className="font-semibold text-gray-700">LinkedIn</span> ou <span className="font-semibold text-gray-700">e-mail</span>.
           </p>
         </div>
       </div>

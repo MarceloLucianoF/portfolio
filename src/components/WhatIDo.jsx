@@ -1,8 +1,9 @@
 import React from 'react';
+import { Code2, Zap, ServerCog, CheckCircle2 } from 'lucide-react';
 
 const pillars = [
   {
-    icon: "⚛️",
+    icon: <Code2 size={32} className="text-blue-600" />,
     title: "Desenvolvimento Frontend",
     description: "Construção de interfaces modernas, responsivas e focadas na experiência do usuário.",
     items: [
@@ -13,7 +14,7 @@ const pillars = [
     ]
   },
   {
-    icon: "⚡",
+    icon: <Zap size={32} className="text-blue-600" />,
     title: "Lógica & Estado",
     description: "Gerenciamento de dados dinâmicos, integrações complexas e consumo de APIs.",
     items: [
@@ -24,7 +25,7 @@ const pillars = [
     ]
   },
   {
-    icon: "🚢",
+    icon: <ServerCog size={32} className="text-blue-600" />,
     title: "Visão Full-Cycle (Diferencial)",
     description: "Compreensão da esteira completa: do código limpo no front ao deploy no servidor.",
     items: [
@@ -53,7 +54,7 @@ export default function WhatIDo() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {pillars.map((pillar, index) => (
             <div key={index} className="bg-gray-50 rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-              <div className="w-16 h-16 bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-center text-3xl mb-6">
+              <div className="w-16 h-16 bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-center mb-6">
                 {pillar.icon}
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">{pillar.title}</h3>
@@ -62,7 +63,7 @@ export default function WhatIDo() {
               <ul className="space-y-3">
                 {pillar.items.map((item, i) => (
                   <li key={i} className="flex items-start text-sm text-gray-700 font-medium">
-                    <span className="text-blue-500 mr-2 font-bold">✓</span>
+                    <CheckCircle2 size={16} className="text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
                     {item}
                   </li>
                 ))}
