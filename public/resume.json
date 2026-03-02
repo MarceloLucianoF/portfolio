@@ -1,6 +1,6 @@
 {
   "name": "Marcelo Luciano Filho",
-  "title": "Analista de Infraestrutura & Automação | Linux, Containers & IA Aplicada",
+  "title": "Desenvolvedor Frontend (React) | UI, Componentização & Deploy",
   "location": "Florianópolis, SC",
   "email": "marceloluciano30@gmail.com",
   "phone": "(Contato via E-mail / LinkedIn)",
@@ -9,29 +9,28 @@
     "github": "https://github.com/MarceloLucianoF",
     "portfolio": "https://portfolio-marcelo-filho.vercel.app/"
   },
-  "summary": "Atuação focada na sustentação de ambientes Linux críticos, Docker, PostgreSQL e automação com Python. Foco na estruturação de conhecimento técnico, integração de sistemas e melhoria contínua de processos para ganho de previsibilidade e eficiência operacional.",
+  "summary": "Desenvolvedor focado no ecossistema React, construção de interfaces responsivas e gerenciamento de estado. Trago como grande diferencial competitivo uma base sólida em Infraestrutura (Linux/Docker) e automação, o que me permite entender o ciclo de vida completo da aplicação, desde o código limpo no frontend até o deploy e a sustentação no servidor.",
   "skills": [
-    "Linux (Debian/CentOS)",
-    "Docker",
-    "PostgreSQL",
-    "Python",
-    "SQL",
-    "OpenVPN/WireGuard",
-    "SSH Tunneling",
-    "Firewall",
-    "RabbitMQ"
+    "React.js (Hooks, Context API)",
+    "JavaScript (ES6+)",
+    "Tailwind CSS",
+    "Integração de APIs REST",
+    "Firebase (Auth/Firestore)",
+    "Git & GitHub",
+    "UI/UX Mobile-First",
+    "Docker & Linux (Diferencial)",
+    "Python & Automação"
   ],
   "experience": [
     {
       "company": "Focalle Engenharia Viária",
-      "role": "Suporte Técnico N2",
+      "role": "Suporte Técnico N2 & Automação",
       "period": "Dez 2023 – Presente",
       "location": "Florianópolis, SC",
       "bullets": [
-        "Administração de servidores Linux, containers Docker e PostgreSQL em operação crítica.",
-        "Configuração e manutenção de conectividade segura (OpenVPN, WireGuard, túneis SSH).",
-        "Apoio à estruturação técnica com uso de IA, resultando na padronização de 16+ manuais, 200+ comandos operacionais e fluxos de atendimento.",
-        "Contribuição para redução do tempo médio de diagnóstico (SLA) via automação de rotinas com Python e SQL."
+        "Sustentação de ambientes Linux críticos e administração de containers Docker em operação contínua.",
+        "Desenvolvimento do 'Especialista Docs', um sistema interno baseado em IA e scripts Python para automatizar fluxos de atendimento.",
+        "Vivência diária com resolução de bugs em produção, redes seguras e melhoria contínua de processos técnicos."
       ]
     },
     {
@@ -40,8 +39,8 @@
       "period": "Jul 2022 – Dez 2022",
       "location": "Poços de Caldas, MG",
       "bullets": [
-        "Manutenção proativa de servidores e configuração de regras de firewall.",
-        "Automação de relatórios via SQL integrado ao Excel para apoio ao controle de estoque."
+        "Manutenção proativa de servidores e estruturação de regras de firewall.",
+        "Automação de relatórios via SQL integrado ao Excel para apoio operacional."
       ]
     },
     {
@@ -50,8 +49,7 @@
       "period": "Fev 2022 – Jun 2022",
       "location": "Poços de Caldas, MG",
       "bullets": [
-        "Suporte N1 a usuários, diagnóstico de hardware/software e manutenção preventiva.",
-        "Apoio na configuração de impressoras, rede local e recursos de sala."
+        "Atendimento a usuários, diagnóstico de hardware/software e configuração de redes locais."
       ]
     }
   ],
@@ -71,19 +69,18 @@
   ],
   "projects": [
     {
-      "name": "Iniciativa Interna de Padronização (IA)",
-      "stack": ["Python", "Engenharia de Prompts", "Linux", "SQL"],
+      "name": "GymUp — Plataforma SaaS React",
+      "stack": ["React", "JavaScript", "Tailwind CSS", "Firebase"],
       "bullets": [
-        "Estruturação de base documental e fluxos de troubleshooting para a operação N2.",
-        "Entregas focadas em ganho de previsibilidade operacional e redução de dependência informal."
+        "Aplicação interativa para gestão de treinos com experiência de usuário (UX) Mobile-First.",
+        "Implementação de lógica assíncrona, gerenciamento de estado complexo e persistência em tempo real."
       ]
     },
     {
-      "name": "GymUp — Plataforma de Gestão de Treinos",
-      "stack": ["React", "Tailwind CSS", "Firebase"],
+      "name": "Iniciativa de Automação com IA (Python)",
+      "stack": ["Python", "Engenharia de Prompts", "Linux"],
       "bullets": [
-        "Aplicação interativa com persistência em tempo real e experiência de usuário Mobile-First.",
-        "Implementação de lógica assíncrona complexa e gerenciamento de estado global."
+        "Sistema de estruturação de base documental técnica e automação de fluxos de diagnóstico para a equipe N2."
       ]
     }
   ]
