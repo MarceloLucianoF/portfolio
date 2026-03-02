@@ -29,9 +29,9 @@ const skillCategories = [
     title: "Diferencial Técnico",
     description: "Visão de servidor para garantir deploys sem dor de cabeça.",
     skills: [
-      "Linux (Debian/CentOS)",
-      "Docker & Containers",
+      "Linux (base)",
       "Vercel (Serverless Deploy)",
+      "Git/GitHub Workflow Avançado",
       "Troubleshooting em Produção"
     ]
   }

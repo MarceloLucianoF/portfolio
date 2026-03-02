@@ -16,8 +16,8 @@ export default function Footer() {
         </div>
 
         <div className="flex items-center gap-6">
-          <a href="/resume.json" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-500 transition-colors flex items-center gap-1.5 text-xs font-mono" title="View raw resume.json">
-            <FileJson size={16} /> JSON
+          <a href="/resume.json" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-500 transition-colors flex items-center gap-1.5 text-[10px] font-mono" title="View raw resume.json">
+            <FileJson size={14} /> resume.json (dados)
           </a>
           <a href="mailto:marceloluciano30@gmail.com" className="text-gray-500 hover:text-white transition-colors" title="E-mail">
             <Mail size={20} />

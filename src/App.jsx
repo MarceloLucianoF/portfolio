@@ -20,7 +20,7 @@ function App() {
       
       <main className="pt-20 flex-grow w-full flex flex-col">
         
-        {/* 1. IMPACTO IMEDIATO (Sempre visível ao carregar) */}
+        {/* 1. IMPACTO IMEDIATO */}
         <Hero />
         
         {/* 2. O QUE EU FAÇO */}
@@ -41,7 +41,7 @@ function App() {
 
               <div className="space-y-16">
                 
-                {/* PROJETO 1: GYMUP (FRONTEND SAAS) */}
+                {/* PROJETO 1: GYMUP */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center bg-white p-10 md:p-14 rounded-[2.5rem] shadow-xl border border-gray-100">
                   <div className="lg:col-span-7 flex flex-col space-y-6">
                     <h3 className="text-3xl md:text-4xl font-black tracking-tight text-gray-900">GymUp — Plataforma SaaS (React + Firebase)</h3>
@@ -51,22 +51,26 @@ function App() {
                     
                     <ul className="space-y-3 pt-2">
                       <li className="flex items-start text-sm text-gray-700 font-medium">
-                        <span className="text-blue-500 mr-2 font-bold">•</span> Componentização escalável e layout responsivo.
+                        <span className="text-blue-500 mr-3 font-bold flex-shrink-0">•</span>
+                        <span>Componentização escalável e layout responsivo.</span>
                       </li>
                       <li className="flex items-start text-sm text-gray-700 font-medium">
-                        <span className="text-blue-500 mr-2 font-bold">•</span> Runner interativo com timers e fluxo série a série.
+                        <span className="text-blue-500 mr-3 font-bold flex-shrink-0">•</span>
+                        <span>Runner interativo com timers e fluxo série a série.</span>
                       </li>
                       <li className="flex items-start text-sm text-gray-700 font-medium">
-                        <span className="text-blue-500 mr-2 font-bold">•</span> Auth + Firestore (persistência em tempo real).
+                        <span className="text-blue-500 mr-3 font-bold flex-shrink-0">•</span>
+                        <span>Auth + Firestore (persistência em tempo real).</span>
                       </li>
                       <li className="flex items-start text-sm text-gray-700 font-medium">
-                        <span className="text-blue-500 mr-2 font-bold">•</span> Organização de estado e componentes pensando em manutenção.
+                        <span className="text-blue-500 mr-3 font-bold flex-shrink-0">•</span>
+                        <span>Organização de estado e componentes pensando em manutenção.</span>
                       </li>
                     </ul>
 
                     <div className="flex flex-wrap gap-4 pt-6">
-                       <a href="#" className="px-6 py-2.5 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors text-sm">Ver Demo</a>
-                       <a href="https://github.com/MarceloLucianoF" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 bg-gray-100 text-gray-800 font-bold rounded-lg border border-gray-200 hover:bg-gray-200 transition-colors text-sm">Ver Código</a>
+                       <a href="https://workout-tracker-app-20e43.web.app" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors text-sm">Ver Demo</a>
+                       <a href="https://github.com/MarceloLucianoF/workout-app" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 bg-gray-100 text-gray-800 font-bold rounded-lg border border-gray-200 hover:bg-gray-200 transition-colors text-sm">Ver Código</a>
                     </div>
                   </div>
                   
@@ -87,17 +91,21 @@ function App() {
                     
                     <ul className="space-y-3 pt-2">
                       <li className="flex items-start text-sm text-gray-300 font-medium">
-                        <span className="text-blue-400 mr-2 font-bold">•</span> Componentes reutilizáveis e estilização Tailwind.
+                        <span className="text-blue-400 mr-3 font-bold flex-shrink-0">•</span>
+                        <span>Componentes reutilizáveis e estilização Tailwind.</span>
                       </li>
                       <li className="flex items-start text-sm text-gray-300 font-medium">
-                        <span className="text-blue-400 mr-2 font-bold">•</span> Performance e carregamento leve com animações nativas.
+                        <span className="text-blue-400 mr-3 font-bold flex-shrink-0">•</span>
+                        <span>Performance e carregamento leve com animações nativas.</span>
                       </li>
                       <li className="flex items-start text-sm text-gray-300 font-medium">
-                        <span className="text-blue-400 mr-2 font-bold">•</span> Geração de currículo (PDF) no backend serverless (Vercel).
+                        <span className="text-blue-400 mr-3 font-bold flex-shrink-0">•</span>
+                        <span>Geração de currículo (PDF) no backend serverless (Vercel).</span>
                       </li>
                     </ul>
 
                     <div className="flex flex-wrap gap-4 pt-6">
+                       <a href="https://portfolio-marcelo-filho.vercel.app" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-400 transition-colors text-sm">Ver Site</a>
                        <a href="https://github.com/MarceloLucianoF/portfolio" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 bg-gray-800 text-white font-bold rounded-lg border border-gray-700 hover:bg-gray-700 transition-colors text-sm">Ver Código</a>
                     </div>
                   </div>
@@ -108,7 +116,7 @@ function App() {
           </section>
         </FadeIn>
 
-        {/* 4. EXPERIÊNCIA PROFISSIONAL COMPACTA */}
+        {/* 4. EXPERIÊNCIA PROFISSIONAL */}
         <FadeIn>
           <Experience />
         </FadeIn>
@@ -130,7 +138,7 @@ function App() {
 
       </main>
 
-      {/* UX MOBILE: Botão de voltar ao topo */}
+      {/* UX MOBILE */}
       <ScrollToTop />
 
       {/* RODAPÉ */}

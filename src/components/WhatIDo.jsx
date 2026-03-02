@@ -47,7 +47,7 @@ export default function WhatIDo() {
             O Que Eu <span className="text-blue-600">Faço</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Combino o desenvolvimento de interfaces fluidas em React com uma visão profunda de como as aplicações rodam e escalam nos servidores.
+          Combino o desenvolvimento de interfaces fluidas em React com uma visão prática de como as aplicações funcionam em produção e como o deploy impacta a entrega.
           </p>
         </div>
 

@@ -10,13 +10,13 @@ const experiences = [
       {
         title: "Suporte Técnico N2 & Automação",
         period: "Dezembro 2023 – Presente",
-        description: "Sustentação de infraestrutura crítica e desenvolvimento de automações. Vivência diária com resolução de bugs em produção, redes e melhoria contínua de processos, trazendo uma base sólida de deploy e servidores para minha atuação como desenvolvedor.",
+        description: "Vivência diária com incidentes em produção e automação, trazendo visão prática de deploy, logs e estabilidade para minha atuação como desenvolvedor.",
         achievements: [
-          "Administração de servidores Linux e containers Docker em operação contínua.",
-          "Desenvolvimento do 'Especialista Docs', um sistema interno baseado em IA e scripts Python para automatizar fluxos.",
-          "Apoio à padronização técnica, otimizando o fluxo de atendimento e reduzindo o tempo médio de diagnóstico (SLA)."
+          "Análise de logs e resolução de incidentes em ambientes produtivos contínuos.",
+          "Automação de rotinas e scripts de diagnóstico em Python.",
+          "Apoio à padronização técnica e fluxos operacionais da equipe."
         ],
-        techStack: ["Linux", "Docker", "Python", "Redes", "IA"]
+        techStack: ["Linux", "Python", "Deploy", "Troubleshooting"]
       },
       {
         title: "Auxiliar de Processamento",
