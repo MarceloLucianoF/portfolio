@@ -78,8 +78,7 @@ O endpoint `/api/og.js` utiliza `@vercel/og` para gerar imagens dinâmicas para 
 ---
 
 ## 📁 Estrutura do Projeto
-
-```text
+```
 ├── api/                # Serverless Functions (Vercel)
 │   ├── cv.js           # Geração dinâmica de PDF
 │   └── og.js           # Geração dinâmica de OpenGraph
@@ -90,3 +89,35 @@ O endpoint `/api/og.js` utiliza `@vercel/og` para gerar imagens dinâmicas para 
 │   └── App.jsx         # Composição principal da aplicação
 ├── index.html
 └── vercel.json
+```
+
+---
+
+## 🚀 Executando Localmente
+
+Instale as dependências:
+```bash
+npm install
+```
+Inicie o servidor de desenvolvimento:
+```bash
+npm run dev
+```
+Para testar as rotas da API e as funções serverless localmente, utilize o CLI da Vercel:
+```bash
+vercel dev
+```
+
+----
+
+## 🎯 Objetivo do Projeto
+
+Demonstrar domínio prático em:
+* **React moderno** (Hooks, gerenciamento de estado e ciclo de vida)
+* **Organização de código** e arquitetura de pastas limpa
+* **Componentização** focada em reuso e escalabilidade
+* **Integração** de ecossistema frontend com funções serverless (FaaS)
+* **Performance e boas práticas** (Mobile-First, SSOT, SEO base)
+
+---
+*Desenvolvido por [Marcelo Luciano Filho](https://linkedin.com/in/marcelo-luciano-filho).*
