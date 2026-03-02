@@ -1,41 +1,38 @@
 import React from 'react';
-import { LayoutTemplate, Database, Server, CheckCircle2 } from 'lucide-react';
+import { LayoutTemplate, Blocks, ServerCog, CheckCircle2 } from 'lucide-react';
 
 const skillCategories = [
   {
     icon: <LayoutTemplate size={28} className="text-blue-600" />,
-    title: "Frontend & UI",
-    description: "Criação de interfaces responsivas, modernas e acessíveis.",
+    title: "Stack Principal",
+    description: "Tecnologias que utilizo no dia a dia para construir interfaces.",
     skills: [
-      "React.js (Hooks, Context API)",
+      "React.js (Hooks, Context)",
       "JavaScript (ES6+)",
       "Tailwind CSS",
-      "UI/UX Mobile-First",
-      "Vite & Componentização"
+      "Consumo de APIs REST"
     ]
   },
   {
-    icon: <Database size={28} className="text-blue-600" />,
-    title: "Lógica & Ferramentas",
-    description: "Gerenciamento de dados e versionamento seguro de código.",
+    icon: <Blocks size={28} className="text-blue-600" />,
+    title: "Arquitetura & Lógica",
+    description: "Estruturação de projetos e gerenciamento de dados.",
     skills: [
-      "Integração de APIs REST",
-      "Firebase (Auth/Firestore)",
-      "Git & GitHub",
+      "Componentização escalável",
       "Gerenciamento de Estado",
-      "SQL Básico/Intermediário"
+      "Firebase (Auth/Firestore)",
+      "Git & GitHub Workflow"
     ]
   },
   {
-    icon: <Server size={28} className="text-blue-600" />,
-    title: "Infra & Deploy (Diferencial)",
-    description: "Visão full-cycle para garantir performance em produção.",
+    icon: <ServerCog size={28} className="text-blue-600" />,
+    title: "Diferencial Técnico",
+    description: "Visão de servidor para garantir deploys sem dor de cabeça.",
     skills: [
-      "Vercel (Serverless/Deploy)",
-      "Docker & Containers",
       "Linux (Debian/CentOS)",
-      "Python & Automação",
-      "Troubleshooting de Servidores"
+      "Docker & Containers",
+      "Vercel (Serverless Deploy)",
+      "Troubleshooting em Produção"
     ]
   }
 ];
@@ -47,10 +44,10 @@ export default function Skills() {
         
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold tracking-tighter text-gray-950 mb-4">
-            Meu Arsenal <span className="text-blue-600">Técnico</span>
+            Arsenal <span className="text-blue-600">Técnico</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            O ecossistema de tecnologias que utilizo para transformar lógica complexa em interfaces fluidas e performáticas.
+            Foco total no ecossistema moderno de Frontend, suportado por uma base sólida em infraestrutura.
           </p>
         </div>
 
