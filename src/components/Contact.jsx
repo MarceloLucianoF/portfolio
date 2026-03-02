@@ -8,6 +8,7 @@ export default function Contact() {
   return (
     <section id="contato" className="py-20 bg-gray-50 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+        
         {/* Header */}
         <div className="text-center mb-14">
           <h2 className="text-4xl font-extrabold tracking-tighter text-gray-950 mb-4">
@@ -22,10 +23,11 @@ export default function Contact() {
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
           {/* Email */}
           <a
             href={`mailto:${EMAIL}`}
-            className="group bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            className="group bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
             title="Enviar e-mail"
           >
             <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-2xl mb-6 border border-blue-100 group-hover:scale-110 transition-transform">
@@ -36,7 +38,7 @@ export default function Contact() {
               Ideal para envio de proposta, vaga e detalhes da oportunidade.
             </p>
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-50">
               <span className="text-sm font-semibold text-gray-800">
                 {EMAIL}
               </span>
@@ -53,7 +55,7 @@ export default function Contact() {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            className="group bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
             title="Chamar no WhatsApp"
           >
             <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-2xl mb-6 border border-blue-100 group-hover:scale-110 transition-transform">
@@ -64,7 +66,7 @@ export default function Contact() {
               Para conversas rápidas e alinhamento inicial (recrutador/tech lead).
             </p>
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-50">
               <span className="text-sm font-semibold text-gray-800">
                 +55 (35) 99874-4678
               </span>
@@ -79,7 +81,7 @@ export default function Contact() {
             href={LINKEDIN_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            className="group bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
             title="Abrir LinkedIn"
           >
             <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-2xl mb-6 border border-blue-100 group-hover:scale-110 transition-transform">
@@ -90,7 +92,7 @@ export default function Contact() {
               Conexão direta + mensagens e histórico profissional completo.
             </p>
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-50">
               <span className="text-sm font-semibold text-gray-800">
                 /marcelo-luciano-filho
               </span>
