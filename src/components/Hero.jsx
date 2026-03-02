@@ -10,18 +10,6 @@ const RESUME_JSON_URL = "/resume.json";
 export default function Hero() {
   return (
     <section id="inicio" className="py-20 md:py-32 bg-gray-50 text-gray-900 w-full relative overflow-hidden">
-      
-      {/* EASTER EGG PARA TECH LEADS */}
-      <a
-        href={RESUME_JSON_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="absolute bottom-4 right-4 md:bottom-6 md:right-8 text-[10px] font-mono text-gray-400 opacity-20 hover:opacity-100 transition-opacity duration-300 z-50 flex items-center gap-1 cursor-crosshair"
-        title="Single Source of Truth (JSON)"
-      >
-        <span className="text-blue-500 font-bold">{`{ }`}</span> GET /resume.json
-      </a>
-
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 w-full relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
           
