@@ -1,52 +1,32 @@
 import React from 'react';
-
-const GITHUB_URL = "https://github.com/MarceloLucianoF";
-const LINKEDIN_URL = "https://linkedin.com/in/marcelo-luciano-filho";
-const EMAIL = "marceloluciano30@gmail.com";
+import { Github, Linkedin, Mail, FileJson } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-white border-t border-gray-200 py-10 mt-auto">
+    <footer className="bg-gray-950 text-gray-400 py-12 border-t border-gray-900">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 flex flex-col md:flex-row justify-between items-center gap-6">
         
-        {/* Lado Esquerdo: Copyright e Nome */}
         <div className="text-center md:text-left">
-          <p className="text-2xl font-black text-gray-950 tracking-tighter mb-1">
-            Marcelo<span className="text-blue-600">.dev</span>
-          </p>
-          <p className="text-sm font-medium text-gray-500">
-            &copy; {currentYear} Marcelo Luciano Filho. Todos os direitos reservados.
+          <p className="text-sm font-semibold text-gray-300">Marcelo.dev</p>
+          <p className="text-xs mt-1 text-gray-500">
+            © {currentYear} Marcelo Luciano Filho. Todos os direitos reservados.
           </p>
         </div>
 
-        {/* Lado Direito: Links Sociais */}
-        <div className="flex items-center gap-4">
-          <a 
-            href={`mailto:${EMAIL}`}
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-50 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors border border-gray-200 shadow-sm"
-            title="Enviar E-mail"
-          >
-            📧
+        <div className="flex items-center gap-6">
+          <a href="/resume.json" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-500 transition-colors flex items-center gap-1.5 text-xs font-mono" title="View raw resume.json">
+            <FileJson size={16} /> JSON
           </a>
-          <a 
-            href={GITHUB_URL} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-50 hover:bg-gray-100 transition-colors border border-gray-200 shadow-sm"
-            title="GitHub"
-          >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" className="w-5 h-5 opacity-70 hover:opacity-100 transition-opacity" />
+          <a href="mailto:marceloluciano30@gmail.com" className="text-gray-500 hover:text-white transition-colors" title="E-mail">
+            <Mail size={20} />
           </a>
-          <a 
-            href={LINKEDIN_URL} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-50 hover:bg-gray-100 transition-colors border border-gray-200 shadow-sm"
-            title="LinkedIn"
-          >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" className="w-5 h-5 opacity-70 hover:opacity-100 transition-opacity" />
+          <a href="https://github.com/MarceloLucianoF" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors" title="GitHub">
+            <Github size={20} />
+          </a>
+          <a href="https://linkedin.com/in/marcelo-luciano-filho" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-400 transition-colors" title="LinkedIn">
+            <Linkedin size={20} />
           </a>
         </div>
 
