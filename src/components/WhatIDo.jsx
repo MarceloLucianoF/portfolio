@@ -2,36 +2,36 @@ import React from 'react';
 
 const pillars = [
   {
-    icon: "🖥",
-    title: "Infraestrutura Crítica",
-    description: "Sustentação e orquestração de ambientes Linux de alta disponibilidade.",
+    icon: "⚛️",
+    title: "Desenvolvimento Frontend",
+    description: "Construção de interfaces modernas, responsivas e focadas na experiência do usuário.",
     items: [
-      "Administração Linux (Debian/CentOS)", 
-      "Containers Docker e PostgreSQL", 
-      "VPNs e Túneis SSH", 
-      "Atuação em sistemas de monitoramento viário"
+      "Ecossistema React (Hooks, Context, Vite)",
+      "Estilização com Tailwind CSS",
+      "Design Mobile-First e UI/UX",
+      "Componentização escalável"
     ]
   },
   {
-    icon: "🤖",
-    title: "Automação & IA",
-    description: "Uso de IA e código estruturado para ganho de previsibilidade operacional.",
+    icon: "⚡",
+    title: "Lógica & Estado",
+    description: "Gerenciamento de dados dinâmicos, integrações complexas e consumo de APIs.",
     items: [
-      "Engenharia de Prompts aplicada à documentação", 
-      "Estruturação de bases técnicas com IA", 
-      "Organização automatizada de manuais", 
-      "Scripts de diagnóstico em Python e SQL"
+      "JavaScript Moderno (ES6+)",
+      "Gerenciamento de Estado Global",
+      "Integração de APIs REST",
+      "Integração com Firebase (Auth/Firestore)"
     ]
   },
   {
-    icon: "📚",
-    title: "Engenharia de Conhecimento",
-    description: "Estruturação de operações para reduzir a dependência de conhecimento informal.",
+    icon: "🚢",
+    title: "Visão Full-Cycle (Diferencial)",
+    description: "Compreensão da esteira completa: do código limpo no front ao deploy no servidor.",
     items: [
-      "Padronização de fluxos de troubleshooting", 
-      "Consolidação de documentação técnica escalável", 
-      "Contribuição para melhoria de SLA", 
-      "Mapeamento de cenários recorrentes"
+      "Versionamento com Git e GitHub",
+      "Deploy e Serverless (Vercel, Firebase)",
+      "Familiaridade com Linux e Docker",
+      "Troubleshooting ponta a ponta"
     ]
   }
 ];
@@ -46,7 +46,7 @@ export default function WhatIDo() {
             O Que Eu <span className="text-blue-600">Faço</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Minha atuação combina três pilares estratégicos para elevar a maturidade técnica, a segurança e a eficiência de operações críticas.
+            Combino o desenvolvimento de interfaces fluidas em React com uma visão profunda de como as aplicações rodam e escalam nos servidores.
           </p>
         </div>
 
