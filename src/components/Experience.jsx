@@ -1,4 +1,5 @@
 import React from 'react';
+import { MapPin } from 'lucide-react';
 
 const experiences = [
   {
@@ -7,27 +8,27 @@ const experiences = [
     location: "Florianópolis, SC",
     roles: [
       {
-        title: "Suporte Técnico N2",
+        title: "Suporte Técnico N2 & Automação",
         period: "Dezembro 2023 – Presente",
-        description: "Atuação na sustentação de infraestrutura Linux aplicada a sistemas de monitoramento viário e ambientes críticos. Foco em disponibilidade, conectividade segura e estabilidade operacional.",
+        description: "Sustentação de infraestrutura crítica e desenvolvimento de automações. Vivência diária com resolução de bugs em produção, redes e melhoria contínua de processos, trazendo uma base sólida de deploy e servidores para minha atuação como desenvolvedor.",
         achievements: [
-          "Administração de servidores Linux, containers Docker e redes seguras (OpenVPN, WireGuard, túneis SSH).",
-          "Apoio à padronização técnica com uso de IA (Engenharia de Prompts), consolidando manuais e otimizando o fluxo de atendimento.",
-          "Desenvolvimento de scripts em Python e consultas em SQL para automação de diagnósticos operacionais."
+          "Administração de servidores Linux e containers Docker em operação contínua.",
+          "Desenvolvimento do 'Especialista Docs', um sistema interno baseado em IA e scripts Python para automatizar fluxos.",
+          "Apoio à padronização técnica, otimizando o fluxo de atendimento e reduzindo o tempo médio de diagnóstico (SLA)."
         ],
-        techStack: ["Linux", "Docker", "PostgreSQL", "Python", "IA", "Redes"]
+        techStack: ["Linux", "Docker", "Python", "Redes", "IA"]
       },
       {
         title: "Auxiliar de Processamento",
         period: "Outubro 2023 – Novembro 2023",
-        description: "Apoio no processamento de dados e validação de registros de infrações, garantindo a precisão das informações e o compliance operacional.",
+        description: "Apoio no processamento de dados e validação de registros, garantindo a precisão das informações e o compliance operacional.",
         achievements: [],
         techStack: []
       },
       {
         title: "Assistente Técnico",
         period: "Junho 2023 – Setembro 2023",
-        description: "Montagem física, testes iniciais e diagnóstico preliminar de hardware e sensores de equipamentos de segurança de trânsito.",
+        description: "Montagem física, testes iniciais e diagnóstico preliminar de hardware e sensores de equipamentos.",
         achievements: [],
         techStack: []
       }
@@ -44,9 +45,9 @@ const experiences = [
         description: "Atuação híbrida entre suporte de infraestrutura e inteligência de dados.",
         achievements: [
           "Manutenção proativa de servidores e configuração de regras de firewall.",
-          "Automação de relatórios via SQL integrado ao Excel, apoiando o controle de estoque e o faturamento."
+          "Automação de relatórios via SQL integrado ao Excel, apoiando o controle operacional."
         ],
-        techStack: ["SQL", "Excel Avançado", "Windows Server", "Firewall"]
+        techStack: ["SQL", "Windows Server", "Firewall"]
       }
     ]
   },
@@ -61,10 +62,9 @@ const experiences = [
         description: "Suporte N1 a usuários (docentes, coordenação e administrativo) em ambiente educacional.",
         achievements: [
           "Diagnóstico de hardware/software e resolução de incidentes em estações Windows.",
-          "Manutenção preventiva (checklist, periféricos e infraestrutura de rede local).",
-          "Apoio na configuração de impressoras e recursos multimídia em sala de aula."
+          "Apoio na configuração de infraestrutura de rede local e recursos multimídia."
         ],
-        techStack: ["Suporte N1", "Hardware", "Manutenção Preventiva", "Windows"]
+        techStack: ["Suporte N1", "Hardware", "Redes"]
       }
     ]
   }
@@ -90,7 +90,9 @@ export default function Experience() {
               <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-8 border-b border-gray-100 pb-6">
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900">{exp.company}</h3>
-                  <p className="text-gray-500 font-medium text-sm mt-1">📍 {exp.location}</p>
+                  <p className="text-gray-500 font-medium text-sm mt-1 flex items-center gap-1.5">
+                    <MapPin size={16} className="text-blue-500" /> {exp.location}
+                  </p>
                 </div>
               </div>
 
