@@ -5,11 +5,8 @@ const GITHUB_URL = "https://github.com/MarceloLucianoF";
 const LINKEDIN_URL = "https://linkedin.com/in/marcelo-luciano-filho";
 const FOTO_PERFIL_URL = "https://avatars.githubusercontent.com/u/103156755?s=400&v=4";
 
-// PDF dinâmico (abre em nova aba)
+// PDF dinâmico
 const CV_URL = "/api/cv";
-
-// Download forçado (opcional)
-const CV_DOWNLOAD_URL = "/api/cv?download=1";
 
 // “Single Source of Truth” (dados do currículo)
 const RESUME_JSON_URL = "/resume.json";
@@ -17,6 +14,18 @@ const RESUME_JSON_URL = "/resume.json";
 export default function Hero() {
   return (
     <section id="inicio" className="py-20 md:py-32 bg-gray-50 text-gray-900 w-full relative overflow-hidden">
+      
+      {/* 🚀 EASTER EGG: resume.json discreto no canto inferior direito da tela */}
+      <a
+        href={RESUME_JSON_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute bottom-4 right-4 md:bottom-6 md:right-8 text-[10px] font-mono text-gray-400 opacity-20 hover:opacity-100 transition-opacity duration-300 z-50 flex items-center gap-1 cursor-crosshair"
+        title="Single Source of Truth (JSON)"
+      >
+        <span className="text-blue-500 font-bold">{`{ }`}</span> GET /resume.json
+      </a>
+
       {/* Limitador para manter centralizado */}
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 w-full relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
@@ -36,7 +45,7 @@ export default function Hero() {
               Olá, eu sou
             </p>
 
-            {/* Nome (responsivo fino) */}
+            {/* Nome */}
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight text-gray-950">
               Marcelo <span className="text-blue-600">Luciano</span> Filho
             </h1>
@@ -59,7 +68,7 @@ export default function Hero() {
             {/* Botões de Ação */}
             <div className="flex flex-wrap gap-4 pt-6 justify-center md:justify-start">
               
-              {/* Botão de Contato (Novo) */}
+              {/* Botão de Contato */}
               <a
                 href="#contato"
                 className="px-8 py-3.5 bg-gray-900 text-white font-bold rounded-xl shadow-lg hover:bg-gray-800 hover:scale-[1.03] transition-all flex items-center gap-2.5"
@@ -67,26 +76,13 @@ export default function Hero() {
                 <span>💬</span> Falar com Marcelo
               </a>
 
-              {/* CV: abre em nova aba */}
+              {/* CV */}
               <a
                 href={CV_URL}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="px-8 py-3.5 bg-blue-600 text-white font-bold rounded-xl shadow-lg shadow-blue-200 hover:bg-blue-700 hover:scale-[1.03] transition-all flex items-center gap-2.5"
-                title="Abrir currículo (PDF) gerado automaticamente"
+                title="Baixar currículo atualizado"
               >
-                <span>📄</span> Currículo (PDF)
-              </a>
-
-              {/* SSOT: resume.json */}
-              <a
-                href={RESUME_JSON_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3.5 bg-white text-gray-800 font-semibold rounded-xl border border-gray-200 shadow-sm hover:border-gray-300 hover:bg-gray-100 transition-all flex items-center gap-2.5"
-                title="Single Source of Truth (resume.json)"
-              >
-                {"{ }"} resume.json
+                <span>📄</span> Baixar Currículo
               </a>
 
               {/* GitHub */}
