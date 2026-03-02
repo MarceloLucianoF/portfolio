@@ -45,8 +45,8 @@ function App() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center bg-white p-10 md:p-14 rounded-[2.5rem] shadow-xl border border-gray-100">
                   <div className="lg:col-span-7 flex flex-col space-y-6">
                     <h3 className="text-3xl md:text-4xl font-black tracking-tight text-gray-900">GymUp — Plataforma SaaS (React + Firebase)</h3>
-                    <p className="text-lg text-gray-600 leading-relaxed">
-                      Plataforma para gestão de treinos com foco em UX Mobile-First e persistência em tempo real.
+                    <p className="text-lg text-gray-600 max-w-2xl mx-auto text-center mb-16">
+                      Aplicações que desenvolvi unindo interfaces modernas em React com lógica de negócios estruturada.
                     </p>
                     
                     <ul className="space-y-3 pt-2">
@@ -56,7 +56,7 @@ function App() {
                       </li>
                       <li className="flex items-start text-sm text-gray-700 font-medium">
                         <span className="text-blue-500 mr-3 font-bold flex-shrink-0">•</span>
-                        <span>Runner interativo com timers e fluxo série a série.</span>
+                        <span>Implementação de lógica assíncrona (timers), controle de estado e fluxo de execução série a série.</span>
                       </li>
                       <li className="flex items-start text-sm text-gray-700 font-medium">
                         <span className="text-blue-500 mr-3 font-bold flex-shrink-0">•</span>

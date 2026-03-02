@@ -1,6 +1,6 @@
 {
   "name": "Marcelo Luciano Filho",
-  "title": "Desenvolvedor Frontend (React) | UI, Componentização & Deploy",
+  "title": "Desenvolvedor Frontend (React) | UI, Componentização & Integração com APIs",
   "location": "Florianópolis, SC",
   "email": "marceloluciano30@gmail.com",
   "phone": "(Contato via E-mail / LinkedIn)",
@@ -9,7 +9,7 @@
     "github": "https://github.com/MarceloLucianoF",
     "portfolio": "https://portfolio-marcelo-filho.vercel.app/"
   },
-  "summary": "Desenvolvedor focado no ecossistema React, construção de interfaces responsivas e gerenciamento de estado. Trago como grande diferencial competitivo uma base sólida em Infraestrutura (Linux/Docker) e automação, o que me permite entender o ciclo de vida completo da aplicação, desde o código limpo no frontend até o deploy e a sustentação no servidor.",
+  "summary": "Desenvolvedor Frontend focado no ecossistema React, com prática em componentização, interfaces responsivas e integração com APIs. Experiência com gerenciamento de estado, autenticação e persistência de dados (Firebase). Diferencial: base técnica em deploy e operação, o que ajuda a entregar com mais segurança em produção.",
   "skills": [
     "React.js (Hooks, Context API)",
     "JavaScript (ES6+)",
@@ -18,8 +18,8 @@
     "Firebase (Auth/Firestore)",
     "Git & GitHub",
     "UI/UX Mobile-First",
-    "Docker & Linux (Diferencial)",
-    "Python & Automação"
+    "Deploy (Vercel/Firebase) — Diferencial",
+    "Linux/Docker — Diferencial"
   ],
   "experience": [
     {
@@ -28,9 +28,9 @@
       "period": "Dez 2023 – Presente",
       "location": "Florianópolis, SC",
       "bullets": [
-        "Sustentação de ambientes Linux críticos e administração de containers Docker em operação contínua.",
-        "Desenvolvimento do 'Especialista Docs', um sistema interno baseado em IA e scripts Python para automatizar fluxos de atendimento.",
-        "Vivência diária com resolução de bugs em produção, redes seguras e melhoria contínua de processos técnicos."
+        "Sustentação de ambientes em produção com troubleshooting via logs e apoio a correções operacionais.",
+        "Automação de rotinas e padronização de fluxos técnicos com scripts e documentação estruturada.",
+        "Vivência com melhoria contínua, mudanças controladas e suporte a demandas críticas com foco em redução de tempo de diagnóstico."
       ]
     },
     {
@@ -39,8 +39,8 @@
       "period": "Jul 2022 – Dez 2022",
       "location": "Poços de Caldas, MG",
       "bullets": [
-        "Manutenção proativa de servidores e estruturação de regras de firewall.",
-        "Automação de relatórios via SQL integrado ao Excel para apoio operacional."
+        "Suporte técnico e manutenção de ambiente, com atuação em rotinas operacionais e segurança básica.",
+        "Automação de relatórios via SQL integrado ao Excel para apoio ao controle operacional."
       ]
     },
     {
@@ -49,7 +49,7 @@
       "period": "Fev 2022 – Jun 2022",
       "location": "Poços de Caldas, MG",
       "bullets": [
-        "Atendimento a usuários, diagnóstico de hardware/software e configuração de redes locais."
+        "Atendimento a usuários, diagnóstico de hardware/software e apoio na configuração de rede local."
       ]
     }
   ],
@@ -69,18 +69,21 @@
   ],
   "projects": [
     {
-      "name": "GymUp — Plataforma SaaS React",
+      "name": "GymUp — Plataforma SaaS",
       "stack": ["React", "JavaScript", "Tailwind CSS", "Firebase"],
+      "demoUrl": "https://workout-tracker-app-20e43.web.app",
+      "repoUrl": "COLOQUE_AQUI_O_LINK_DO_REPO_DO_GYMUP",
       "bullets": [
-        "Aplicação interativa para gestão de treinos com experiência de usuário (UX) Mobile-First.",
-        "Implementação de lógica assíncrona, gerenciamento de estado complexo e persistência em tempo real."
+        "Interface Mobile-First com componentização escalável e foco em UX.",
+        "Fluxos de autenticação e persistência em tempo real com Firebase (Auth/Firestore).",
+        "Gerenciamento de estado e lógica assíncrona (timers e interação série a série) com atenção a performance."
       ]
     },
     {
-      "name": "Iniciativa de Automação com IA (Python)",
-      "stack": ["Python", "Engenharia de Prompts", "Linux"],
+      "name": "Automação e Padronização Técnica (Python) — Case Interno",
+      "stack": ["Python", "Documentação", "Linux"],
       "bullets": [
-        "Sistema de estruturação de base documental técnica e automação de fluxos de diagnóstico para a equipe N2."
+        "Padronização de troubleshooting e automação de rotinas internas, com foco em clareza e redução de tempo de diagnóstico."
       ]
     }
   ]

@@ -16,7 +16,7 @@ const experiences = [
           "Automação de rotinas e scripts de diagnóstico em Python.",
           "Apoio à padronização técnica e fluxos operacionais da equipe."
         ],
-        techStack: ["Linux", "Python", "Deploy", "Troubleshooting"]
+        techStack: ["Linux", "Logs & Incidentes", "Automação", "Deploy"]
       },
       {
         title: "Auxiliar de Processamento",

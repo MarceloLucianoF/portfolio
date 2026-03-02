@@ -33,7 +33,7 @@ export default function Hero() {
 
             <p className="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
               Crio interfaces modernas, responsivas e bem componentizadas no ecossistema React.
-              <br/><span className="text-gray-500 text-base mt-2 block">Diferencial: entendo deploy e operação o suficiente para entregar com mais segurança em produção.</span>
+              <br/><span className="text-gray-500 text-base mt-2 block">Diferencial: visão prática de deploy e operação, entregando interfaces com mais segurança em produção.</span>
             </p>
 
             {/* QUOTE CURTA */}
