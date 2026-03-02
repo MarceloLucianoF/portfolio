@@ -9,8 +9,9 @@ import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-// IMPORTAÇÃO DA ANIMAÇÃO DE SCROLL (Etapa 3)
+// Animações e UX Mobile
 import FadeIn from './components/FadeIn';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -170,6 +171,9 @@ function App() {
         </FadeIn>
 
       </main>
+
+      {/* UX MOBILE: Botão de voltar ao topo */}
+      <ScrollToTop />
 
       {/* RODAPÉ */}
       <Footer />
